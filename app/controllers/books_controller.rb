@@ -39,7 +39,7 @@ class BooksController < ApplicationController
       flash[:notice] ="Book was successfully updated."
       redirect_to book_path(book.id)
    else
-     flash[:notice] = "Book was failed updated."
+     flash[:notice] = "error!! Book was failed updated."
      @book = Book.find(params[:id])
      render :edit
    end
